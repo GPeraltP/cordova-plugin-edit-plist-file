@@ -43,7 +43,22 @@
                 <string>instagram</string>
             </array>
         </config-file>
-        
+         <config-file target="*-Info.plist" parent="CFBundleURLTypes">
+            <array>
+                <dict>
+                    <key>NSLocationAlwaysUsageDescription</key>
+                    <string>Permite que la aplicación conozca tu ubicación</string>     
+               </dict>
+               <dict>
+                    <key>NSLocationWhenInUseUsageDescription</key>
+                    <string>Permite que la aplicación conozca tu ubicación</string>
+               </dict>
+               <dict>
+                    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+                    <string>Permite que la aplicación conozca tu ubicación</string>
+               </dict>
+            </array>
+        </config-file>
         
         
     </platform>
