@@ -28,7 +28,7 @@
     <!-- Android -->
     <platform name="android">
 	<edit-config file="AndroidManifest.xml" target="/manifest/uses-sdk" mode="merge">
-	    <uses-sdk android:minSdkVersion="16" android:maxSdkVersion="23" />
+	    <uses-sdk android:minSdkVersion="28" android:maxSdkVersion="28" />
 	</edit-config>
     </platform>
     
