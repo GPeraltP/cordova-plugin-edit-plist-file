@@ -27,10 +27,15 @@
     
     <!-- Android -->
     <platform name="android">
-		<edit-config file="AndroidManifest.xml" target="/manifest/uses-sdk" mode="merge">
+	    <config-file parent="/*" target="res/xml/config.xml">
+		    <preference name="android-minSdkVersion" value="21"/>
+		    <preference name="android-targetSdkVersion" value="28"/>		    
+	    </config-file>
+	    
+<!--	<edit-config file="AndroidManifest.xml" target="/manifest/uses-sdk" mode="merge">
             <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="28" />
-        </edit-config>
-	</platform>
+        </edit-config> -->
+    </platform>
     
     <!-- ios -->
     <platform name="ios">
