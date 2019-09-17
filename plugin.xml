@@ -52,19 +52,26 @@
             <array>
                 <dict>
                     <key>NSLocationAlwaysUsageDescription</key>
-                    <string>Permite que la aplicación conozca tu ubicación</string>     
+                    <string>Permite que la aplicación conozca tu ubicación.</string>     
                </dict>
                <dict>
                     <key>NSLocationWhenInUseUsageDescription</key>
-                    <string>Permite que la aplicación conozca tu ubicación</string>
+                    <string>Permite que la aplicación conozca tu ubicación.</string>
                </dict>
                <dict>
                     <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-                    <string>Permite que la aplicación conozca tu ubicación</string>
+                    <string>Permite que la aplicación conozca tu ubicación.</string>
                </dict>
             </array>
         </config-file>
+	    
+        <config-file target="*-Info.plist" parent="NSLocationAlwaysUsageDescription">
+            <string>Permite que la aplicación conozca tu ubicación.</string>
+        </config-file>
         
+        <config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription">
+            <string>Permite que la aplicación conozca tu ubicación.</string>
+        </config-file>
         
     </platform>
     
